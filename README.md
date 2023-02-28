@@ -1,5 +1,6 @@
 # Project created with Create React App with Typescript
 
+
 # Adding Tailwind CSS
 https://tailwindcss.com/docs/installation
 
