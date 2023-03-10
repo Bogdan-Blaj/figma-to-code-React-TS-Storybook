@@ -73,7 +73,11 @@ module.exports = {
         900: "#054F31",
       },
     }
-    ,extend: {},
+    ,extend: {
+      width: {
+        '26': '6.5rem',
+      }
+    },
   },
   plugins: [],
 }

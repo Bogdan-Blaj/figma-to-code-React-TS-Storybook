@@ -1,7 +1,7 @@
 export interface IColor {
     hex: String,
     code: number,
-    bgClass: String
+    bgClass: String,
 }
 
 export const colors: IColor[] = [
