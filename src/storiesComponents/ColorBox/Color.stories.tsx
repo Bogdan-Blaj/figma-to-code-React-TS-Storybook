@@ -1,6 +1,6 @@
 import React from 'react';
 import StoryLayout from '../StoryLayout';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentStory, ComponentMeta, Story, Meta } from '@storybook/react';
 import {colors, IColor} from './color';
 import ColorItem from './ColorItem';
 
@@ -60,15 +60,39 @@ export const Default:  ComponentStory<typeof ColorItem> = (args) => (
   </div>)
 
 
-export const Test:  ComponentStory<typeof ColorItem> = (args) => (
-  <StoryLayout
-    darkMode={false}
-    className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-11"
-  >
+/*
+  * Old Way,here we can add extra props besides what the component uses
+*/
+const meta: Meta = {
+  title: 'Color',
+};
+
+interface Props {
+  darkMode: boolean;
+}
+const ColorStory:  Story<Props> = (args) => (
+  <div>
     {
-      colors.map((color) => (
-        <ColorItem color={color}/>
+      result.map((colorsArray, index )=> (
+        <div> 
+          <p className='mb-4'>{colorTypeMap.get(index)}</p>
+          <StoryLayout
+            darkMode={false}
+            className="grid grid-cols-2 gap-4 mb-10 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-11"
+          >
+            {
+              colorsArray.map((color) => (
+                <ColorItem color={color}/>
+              ))
+            }
+          </StoryLayout>
+        </div>
       ))
     }
-  </StoryLayout>
-);
+  </div>)
+
+export const DefaultDarkMode = ColorStory.bind({});
+
+DefaultDarkMode.args = {
+  darkMode: false,
+};
