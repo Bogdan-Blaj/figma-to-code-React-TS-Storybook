@@ -271,7 +271,7 @@ const TypographyHeadings: Story<Props> = (args) => {
 export const Heading = TypographyHeadings.bind({});
 Heading.args = {
   className: "",
-  darkMode: true,
+  darkMode: false,
   fontWeight: ["regular", "medium", "semibold", "bold"],
   variantSize: ["h1", "h2", "h3", "h4", "h5", "h6"],
 };
