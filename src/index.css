@@ -40,4 +40,125 @@
   .badge-lg {
     @apply h-7 px-3 text-sm;
   }
+  /* Button */
+  .btn-base {
+    @apply flex items-center rounded-lg font-medium focus:outline-none whitespace-nowrap select-none;
+  }
+
+  .btn-sm {
+    @apply h-9 px-3.5 text-sm;
+  }
+
+  .btn-md {
+    @apply h-10 px-4 text-sm;
+  }
+
+  .btn-lg {
+    @apply h-11 px-4.5 text-md;
+  }
+
+  .btn-xl {
+    @apply h-12 px-5 text-md;
+  }
+
+  .btn-2xl {
+    @apply h-15 px-7 text-lg;
+  }
+
+  .btn-icon-sm {
+    @apply h-9 w-9;
+  }
+
+  .btn-icon-md {
+    @apply h-10 w-10;
+  }
+
+  .btn-icon-lg {
+    @apply h-11 w-11;
+  }
+
+  .btn-icon-xl {
+    @apply h-12 w-12;
+  }
+
+  .btn-icon-2xl {
+    @apply h-15 w-15;
+  }
+
+  /* Primary */
+  .btn-primary {
+    @apply bg-primary-600  text-white;
+  }
+
+  .btn-primary-hover {
+    @apply hover:bg-primary-700;
+  }
+
+  .btn-primary-focus {
+    @apply focus:ring-4 focus:ring-primary-100;
+  }
+
+  .btn-primary-disabled {
+    @apply bg-primary-200  text-white;
+  }
+
+  /* Secondary */
+  .btn-secondary {
+    @apply shadow-sm border border-transparent bg-primary-50 text-primary-700;
+  }
+
+  .btn-secondary-hover {
+    @apply hover:bg-primary-100;
+  }
+
+  .btn-secondary-focus {
+    @apply focus:ring-4 focus:ring-primary-100;
+  }
+
+  .btn-secondary-disabled {
+    @apply shadow-sm bg-primary-25 text-primary-300;
+  }
+
+  /* SecondaryGray */
+  .btn-secondaryGray {
+    @apply shadow-sm border border-gray-300  bg-white  text-gray-700;
+  }
+
+  .btn-secondaryGray-hover {
+    @apply hover:bg-gray-50  hover:text-gray-800;
+  }
+
+  .btn-secondaryGray-focus {
+    @apply focus:ring-4 focus:ring-gray-100;
+  }
+
+  .btn-secondaryGray-disabled {
+    @apply shadow-sm border border-gray-200 text-gray-300;
+  }
+
+  /* Tertiary */
+  .btn-tertiary {
+    @apply bg-white  text-primary-700;
+  }
+
+  .btn-tertiary-hover {
+    @apply hover:bg-primary-50;
+  }
+
+  .btn-tertiary-disabled {
+    @apply bg-white  text-gray-300;
+  }
+
+  /* TertiaryGray */
+  .btn-tertiaryGray {
+    @apply bg-white  text-gray-900;
+  }
+
+  .btn-tertiaryGray-hover {
+    @apply hover:bg-gray-50  hover:text-gray-800;
+  }
+
+  .btn-tertiaryGray-disabled {
+    @apply bg-white  text-gray-300;
+  }
 }
